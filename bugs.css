@@ -1,0 +1,9 @@
+#bugTracker {
+    position: fixed;
+    width: 40px;
+    height: 200px;
+    background-color: red;
+    top: 40%;
+    right: 0;
+    cursor: pointer;
+}
