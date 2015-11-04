@@ -7,3 +7,7 @@
     right: 0;
     cursor: pointer;
 }
+#bugTracker.vertical-text {
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+}
