@@ -1,5 +1,5 @@
 (function(){
-    var tracker = $('<div>').attr('id', 'bugTracker').attr('class', 'vertical-text').html('Bug Tracker');
+    var tracker = $('<div>').attr('id', 'bugTracker').append($('<div>').attr('class', 'b-label').append($('<i>').attr('class', 'material-icons').html('bug_report')));
     function newModal(title, body, footer, size){
         var size = size || 'lg';
         var modal = $('<div>').attr('class', 'modal fade');
