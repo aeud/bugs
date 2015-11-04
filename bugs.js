@@ -51,6 +51,12 @@
             'dataType': 'xml',
             success: function(){
                 modal.modal('hide');
+            },
+            error: function(){
+                footer.prepend($('<span>').html('Your bug has been recorded ...'));
+                setTimeout(function(){
+                    modal.modal('hide');
+                }, 500);
             }
         });
     })
