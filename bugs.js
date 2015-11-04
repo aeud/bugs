@@ -41,7 +41,7 @@
         $.ajax({
             url: 'https://docs.google.com/forms/d/1Jy7saD8MHAaUL523IvrZ99KiQXPygRfF60dWlqg-ye8/formResponse',
             data: {
-                'entry.1541752088': new Date(),
+                'entry.1541752088': new Date().toISOString(),
                 'entry.1193722962': window.location.href,
                 'entry.528450630': document.referrer || 'N/A',
                 'entry.147700338': navigator.userAgent,
