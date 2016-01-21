@@ -1,5 +1,6 @@
 (function(){
     ae_bug_tracker = function(parameters){
+        var parameters = parameters || {};
         var tracker = $('<div>').attr('id', 'bugTracker').append($('<div>').attr('class', 'b-label').append($('<i>').attr('class', 'material-icons').html('bug_report')));
         function newModal(title, body, footer, size){
             var size = size || 'lg';
@@ -29,7 +30,11 @@
         function textarea(id) {
             return $('<div>').attr('class', 'col-sm-10').append($('<textarea>').attr('class', 'form-control').attr('id', 'bugTracker_' + id));
         }
+        function input(id) {
+            return $('<div>').attr('class', 'col-sm-10').append($('<input>').attr('class', 'form-control').attr('type', 'email').attr('id', 'bugTracker_' + id));
+        }
         var body = $('<form>').attr('class', 'form-horizontal');
+        if (!parameters.email) body.append($('<div>').attr('class', 'form-group').append(label('Email')).append(input('email')));
         body.append($('<div>').attr('class', 'form-group').append(label('Description')).append(textarea('description')));
         var sendButton = $('<button>').attr('class', 'btn btn-primary').html('Send');
         var footer = $('<div>').append(sendButton);
