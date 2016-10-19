@@ -1,10 +1,10 @@
 #bugTracker {
     position: fixed;
     background-color: #CFD8DC;
-    top: 40%;
+    bottom: 0;
     right: 0;
     cursor: pointer;
-    border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 0;
     padding: 4px 0 0 4px;
     opacity: 0.3;
 }
